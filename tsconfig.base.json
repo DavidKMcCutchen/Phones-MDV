@@ -14,8 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
     "paths": {
-      "@phones/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@phones/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@phones/core-data": ["libs/core-data/src/index.ts"],
+      "@phones/core-state": ["libs/core-state/src/index.ts"],
+      "@phones/material": ["libs/material/src/index.ts"],
+      "@phones/testing": ["libs/testing/src/index.ts"],
+      "@phones/ui-login": ["libs/ui-login/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

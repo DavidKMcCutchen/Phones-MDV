@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <h1>Phones</h1>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item *ngFor="let phone of phones" data-test="phone-list-item" (click)="selected.emit(phone)">
+          <h3 matLine>{{phone.name}}</h3>
+          <p matLine>{{phone.brand}}</p>
+          <p matLine>{{phone.msrp}}</p>
+          
+  
+          <button mat-icon-button (click)="deleted.emit(phone); $event.stopImmediatePropagation()">
+            <mat-icon *ngIf="!readonly">delete</mat-icon>
+          </button>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+</mat-card>

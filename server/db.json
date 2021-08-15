@@ -1,0 +1,10 @@
+{
+  "phones": [
+    {
+      "id": 1,
+      "name": "Galaxy 10",
+      "brand": "Samsung",
+      "msrp": "$1000"
+    }
+  ]
+}

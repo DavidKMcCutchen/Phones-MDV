@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="col-50" layout="row" layout-align="center center">
+      <phones-phones-list
+        [phones]="allPhones$ | async"
+        (selected)="selectPhone($event)"
+        (deleted)="deletePhone($event)"
+      ></phones-phones-list>
+    </div>
+    <div class="col-50" layout="row" layout-align="center center">
+      <phones-phones-details
+        [phone]="selectedPhone$ | async"
+        (saved)="savePhone($event)"
+        (cancelled)="resetPhone()"
+        [form]="form"
+      ></phones-phones-details>
+    </div>
+</div>
